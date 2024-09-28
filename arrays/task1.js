@@ -3,16 +3,14 @@ let positiveCount = 0;
 let negativeCount = 0;
 let zeroCount = 0;
 for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] > 0) {
-         positiveCount++;
-    }
-    else if (numbers[i] < 0){
-       negativeCount++;
-    }
-    else if (numbers[i] === 0){
-         zeroCount++;
-    }
+	if (numbers[i] > 0) {
+		positiveCount++;
+	} else if (numbers[i] < 0) {
+		negativeCount++;
+	} else if (numbers[i] === 0) {
+		zeroCount++;
+	}
 }
-console.log("Кількість позитивних чисел: " +positiveCount);
-console.log("Кількість негативних чисел: " +negativeCount);
-console.log("Кількість нульових чисел: " +zeroCount);
+console.log("Кількість позитивних чисел: " + positiveCount);
+console.log("Кількість негативних чисел: " + negativeCount);
+console.log("Кількість нульових чисел: " + zeroCount);

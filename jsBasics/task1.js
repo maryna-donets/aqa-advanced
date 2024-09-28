@@ -1,13 +1,13 @@
 let x = null;
 console.log(x);
 
-let str="Hello";
+let str = "Hello";
 console.log(str);
 
-let y=5;
+let y = 5;
 console.log(y);
 
-let isTest= true;
+let isTest = true;
 console.log(isTest);
 
 let b;
