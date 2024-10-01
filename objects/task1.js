@@ -1,4 +1,4 @@
-const student1 = {};
+const student11 = {};
 student.firstName = "Maryna";
 student.lastName = "Donets";
 student.age = 33;
