@@ -1,5 +1,3 @@
-const axios = require("axios");
-const fs = require("fs").promises;
 const { axiosInstance, writeRequestsToFile, writeResponsesToFile } = require("./instance.js");
 
 afterEach(async () => {
@@ -23,7 +21,6 @@ describe("posts", () => {
 			userId: 2,
 		});
 		console.log(response.data);
-		const id = response.data.id;
 		expect(response.status).toEqual(201);
 		expect(response.data.id).toEqual(101);
 		expect(Object.keys(response.data)).toHaveLength(4);
@@ -60,7 +57,7 @@ describe("comments", () => {
 		response.data.forEach((comment) => {
 			expect(comment.postId).toEqual(parseInt(postid));
 		});
-		response.data.forEach((comment) => {
+		response.data.forEach(() => {
 			expect(Object.keys(response.data)).toHaveLength(5);
 		});
 		const commentIds = response.data.map((comment) => comment.id);
